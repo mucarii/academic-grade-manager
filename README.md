@@ -18,31 +18,57 @@ Um sistema de gerenciamento escolar para gerenciar alunos, disciplinas e notas, 
 ## Estrutura do Projeto
 
 academic-grade-manager/
+
 │
+
 ├── src/
+
 │ ├── config/
+
 │ │ └── dbConfig.js # Configuração do banco de dados
+
 │ ├── controllers/
+
 │ │ ├── gradeController.js # Controladores para operações de notas
+
 │ │ ├── studentController.js # Controladores para operações de alunos
+
 │ │ └── subjectController.js # Controladores para operações de disciplinas
+
 │ ├── models/
+
 │ │ ├── gradeModel.js # Modelo de notas
+
 │ │ ├── studentModel.js # Modelo de alunos
+
 │ │ └── subjectModel.js # Modelo de disciplinas
+
 │ ├── routes/
+
 │ │ ├── gradeRoutes.js # Rotas para operações de notas
+
 │ │ ├── studentRoutes.js # Rotas para operações de alunos
+
 │ │ └── subjectRoutes.js # Rotas para operações de disciplinas
+
 │ ├── middleware/
+
 │ │ └── errorHandler.js # Middleware para tratamento de erros
+
 │ ├── services/
+
 │ │ └── logger.js # Serviço de logging
+
 │ └── app.js # Arquivo principal para inicialização do servidor
+
 │
+
 ├── .gitignore # Arquivos e diretórios a serem ignorados pelo Git
+
 ├── package.json # Dependências e scripts do projeto
+
 └── README.md # Documentação do projeto
+
 
 ## Configuração
 
@@ -64,31 +90,40 @@ O projeto usa SQLite e o arquivo do banco de dados será criado automaticamente 
 O servidor estará disponível em http://localhost:3000
 
 Endpoints da API
+
 Alunos
+
 GET /students: Lista todos os alunos.
+
 POST /students: Adiciona um novo aluno.
-GET /students/
-: Obtém detalhes de um aluno específico.
-PUT /students/
-: Atualiza um aluno específico.
-DELETE /students/
-: Remove um aluno específico.
+
+GET /students/: Obtém detalhes de um aluno específico.
+
+PUT /students/ : Atualiza um aluno específico.
+
+DELETE /students/: Remove um aluno específico.
+
 Disciplinas
+
 GET /subjects: Lista todas as disciplinas.
+
 POST /subjects: Adiciona uma nova disciplina.
-GET /subjects/
-: Obtém detalhes de uma disciplina específica.
-PUT /subjects/
-: Atualiza uma disciplina específica.
-DELETE /subjects/
-: Remove uma disciplina específica.
+
+GET /subjects/: Obtém detalhes de uma disciplina específica.
+
+PUT /subjects/: Atualiza uma disciplina específica.
+
+DELETE /subjects/: Remove uma disciplina específica.
+
 Notas
+
 GET /grades: Lista todas as notas.
+
 POST /grades: Adiciona uma nova nota.
-GET /grades/
-: Obtém detalhes de uma nota específica.
-PUT /grades/
-: Atualiza uma nota específica.
-DELETE /grades/
-: Remove uma nota específica.
+
+GET /grades/: Obtém detalhes de uma nota específica.
+
+PUT /grades/: Atualiza uma nota específica.
+
+DELETE /grades/: Remove uma nota específica.
 
