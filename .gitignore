@@ -1,0 +1,31 @@
+# Diretório de dependências do Node.js
+node_modules/
+
+# Arquivo de banco de dados SQLite
+database.sqlite
+
+# Logs
+*.log
+
+# Arquivos de ambiente
+.env
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Compilações
+dist/
+build/
+
+# Diretórios temporários
+tmp/
+temp/
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Outros arquivos temporários
+*.swp
+*.swo

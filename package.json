@@ -1,0 +1,16 @@
+{
+    "name": "academic-grade-manager",
+    "version": "1.0.0",
+    "description": "Sistema de gerenciamento de notas acadêmicas",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "node src/app.js"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "pg": "^8.8.0",
+        "sequelize": "^6.37.3",
+        "sqlite3": "^5.1.7",
+        "winston": "^3.3.3"
+    }
+}
