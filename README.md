@@ -75,7 +75,7 @@ academic-grade-manager/
 1. **Clone o repositório**
 
    ```bash
-   git clone https://github.com/seu-usuario/academic-grade-manager.git
+   git clone https://github.com/mucarii/academic-grade-manager.git
    cd academic-grade-manager
 2. Instale as dependências
    ```bash
