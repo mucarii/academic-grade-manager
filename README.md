@@ -19,35 +19,30 @@ Um sistema de gerenciamento escolar para gerenciar alunos, disciplinas e notas, 
 
 academic-grade-manager/
 │
-├── bin/
-│   └── app.pl                  # Script principal para iniciar a aplicação
+├── src/
+│ ├── config/
+│ │ └── dbConfig.js # Configuração do banco de dados
+│ ├── controllers/
+│ │ ├── gradeController.js # Controladores para operações de notas
+│ │ ├── studentController.js # Controladores para operações de alunos
+│ │ └── subjectController.js # Controladores para operações de disciplinas
+│ ├── models/
+│ │ ├── gradeModel.js # Modelo de notas
+│ │ ├── studentModel.js # Modelo de alunos
+│ │ └── subjectModel.js # Modelo de disciplinas
+│ ├── routes/
+│ │ ├── gradeRoutes.js # Rotas para operações de notas
+│ │ ├── studentRoutes.js # Rotas para operações de alunos
+│ │ └── subjectRoutes.js # Rotas para operações de disciplinas
+│ ├── middleware/
+│ │ └── errorHandler.js # Middleware para tratamento de erros
+│ ├── services/
+│ │ └── logger.js # Serviço de logging
+│ └── app.js # Arquivo principal para inicialização do servidor
 │
-├── lib/
-│   ├── AcademicGradeManager/
-│   │   ├── Config.pm           # Configuração do banco de dados
-│   │   ├── Controller/
-│   │   │   ├── Grade.pm        # Controlador para operações de notas
-│   │   │   ├── Student.pm      # Controlador para operações de alunos
-│   │   │   └── Subject.pm      # Controlador para operações de disciplinas
-│   │   ├── Model/
-│   │   │   ├── Grade.pm        # Modelo de notas
-│   │   │   ├── Student.pm      # Modelo de alunos
-│   │   │   └── Subject.pm      # Modelo de disciplinas
-│   │   ├── Route/
-│   │   │   ├── Grade.pm        # Rotas para operações de notas
-│   │   │   ├── Student.pm      # Rotas para operações de alunos
-│   │   │   └── Subject.pm      # Rotas para operações de disciplinas
-│   │   ├── Middleware/
-│   │   │   └── ErrorHandler.pm # Middleware para tratamento de erros
-│   │   └── Service/
-│   │       └── Logger.pm       # Serviço de logging
-│
-├── t/
-│   └── test_*.pl               # Testes para a aplicação
-│
-├── .gitignore                  # Arquivos e diretórios a serem ignorados pelo Git
-├── Makefile                    # Arquivo para automação de tarefas (opcional)
-└── README.md                   # Documentação do projeto
+├── .gitignore # Arquivos e diretórios a serem ignorados pelo Git
+├── package.json # Dependências e scripts do projeto
+└── README.md # Documentação do projeto              # Documentação do projeto
 
 ## Configuração
 
