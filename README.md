@@ -42,7 +42,7 @@ academic-grade-manager/
 │
 ├── .gitignore # Arquivos e diretórios a serem ignorados pelo Git
 ├── package.json # Dependências e scripts do projeto
-└── README.md # Documentação do projeto              # Documentação do projeto
+└── README.md # Documentação do projeto
 
 ## Configuração
 
@@ -91,3 +91,4 @@ PUT /grades/
 : Atualiza uma nota específica.
 DELETE /grades/
 : Remove uma nota específica.
+
